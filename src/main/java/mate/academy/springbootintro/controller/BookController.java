@@ -1,6 +1,7 @@
 package mate.academy.springbootintro.controller;
 
 import java.util.List;
+import lombok.RequiredArgsConstructor;
 import mate.academy.springbootintro.model.Book;
 import mate.academy.springbootintro.service.BookService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,13 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/books")
+@RequestMapping("/books")
+@RequiredArgsConstructor
 public class BookController {
     private final BookService service;
-
-    public BookController(BookService service) {
-        this.service = service;
-    }
 
     @GetMapping
     public List<Book> getAll() {

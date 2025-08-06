@@ -35,9 +35,6 @@ public class Book {
 
     private String coverImage;
 
-    @Column(nullable = false)
-    private Boolean deleted = false;
-
     public Long getId() {
         return id;
     }
@@ -92,13 +89,5 @@ public class Book {
 
     public void setCoverImage(String coverImage) {
         this.coverImage = coverImage;
-    }
-
-    public Boolean getDeleted() {
-        return deleted;
-    }
-
-    public void setDeleted(Boolean deleted) {
-        this.deleted = deleted;
     }
 }
