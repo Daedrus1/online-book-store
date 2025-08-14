@@ -5,7 +5,6 @@ import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.PersistenceException;
 import jakarta.transaction.Transactional;
 import java.util.List;
-
 import mate.academy.springbootintro.exeption.DataRetrievalException;
 import mate.academy.springbootintro.model.Book;
 import org.springframework.stereotype.Repository;
