@@ -2,7 +2,6 @@ package mate.academy.springbootintro.repository;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.PersistenceException;
 import jakarta.transaction.Transactional;
 import java.util.List;
@@ -45,5 +44,4 @@ public class BookRepositoryImpl implements BookRepository {
             throw new DataProcessingException("Unable to retrieve books", e);
         }
     }
-    }
-
+}
