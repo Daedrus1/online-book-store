@@ -21,7 +21,7 @@ public class SpringBootIntroApplication {
             Book book = new Book();
             book.setTitle("Spring in Action");
             book.setAuthor("Craig Walls");
-            book.setIsbn("9781617294945"); // уникальное значение
+            book.setIsbn("9781617294945");
             book.setPrice(BigDecimal.valueOf(39.99));
             book.setDescription("A comprehensive guide to Spring Framework");
             book.setCoverImage("cover.jpg");
